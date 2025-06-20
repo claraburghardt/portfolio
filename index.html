@@ -1,3 +1,4 @@
+<!-- Configurações iniciais e importação de arquivos .css e .js -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,33 +8,37 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/scripts.js" defer></script>
 </head>
+
 <body>
+  <!-- Configuração do cabeçalho da página -->
   <header>
     <h1>Nosso Portfólio</h1>
     <p>Desenvolvimento para Web 2025/1</p>
   </header>
 
+  <!-- Configuração da sessão "quem somos nós?" -->
   <section>
     <h2>Quem somos nós?</h2>
     <div class="cards">
-      <div class="card" onclick="openModal('Clara Burghardt', 'Aluna do 5o Semestre de Ciência da Computação na Unisinos!', 'img/Clara.jpg')">
+      <div class="card" onclick="openModal('Clara Burghardt', 'Aluna do 5º Semestre de Ciência da Computação na Unisinos!', 'img/Clara.jpg')">
         <img src="img/Clara.jpg" alt="Clara Burghardt">
         <h3>Clara Burghardt</h3>
         <a href="https://www.linkedin.com/in/claraburghardt/">LinkedIn</a>
       </div>
-      <div class="card" onclick="openModal('Patrícia Nagel', 'Aluna do 5o Semestre de Ciência da Computação na Unisinos!', 'img/Patricia.jpg')">
+      <div class="card" onclick="openModal('Patrícia Nagel', 'Aluna do 5º Semestre de Ciência da Computação na Unisinos!', 'img/Patricia.jpg')">
         <img src="img/Patricia.jpg" alt="Patricia Nagel">
         <h3>Patrícia Nagel</h3>
         <a href="https://www.linkedin.com/in/patricia-nagel/">LinkedIn</a>
       </div>
-      <div class="card" onclick="openModal('Outro Menino', 'Descrição do outro menino', 'img/Clara.jpg')">
-        <img src="img/Clara.jpg" alt="Outro Menino">
-        <h3>Outro Menino</h3>
-        <a href="https://www.linkedin.com/in/claraburghardt/">LinkedIn</a>
+      <div class="card" onclick="openModal('Gabriel Walber', 'Aluno do 5º Semestre de Ciência da Computação na Unisinos!', 'img/Gabriel.jpg')">
+        <img src="img/Gabriel.jpg" alt="Gabriel Walber">
+        <h3>Gabriel Walber</h3>
+        <a href="https://www.linkedin.com/in/gabriel-walber/">LinkedIn</a>
       </div>
     </div>
   </section>
 
+  <!-- Configuração da sessão "projetos guiados" -->
   <section>
     <h2>Projetos Guiados</h2>
     <div class="cards">
@@ -56,6 +61,7 @@
     </div>
   </section>
 
+  <!-- Configuração do modal aberto ao clicar em um card -->
   <div id="modal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
@@ -65,9 +71,10 @@
     </div>
   </div>
 
+  <!-- Configuração do rodapé da página -->
   <footer>
     <p>Contato</p>
-    <p>cburghardt@edu.unisinos.br<br>email 2<br>email 3</p>
+    <p>cburghardt@edu.unisinos.br<br>patiinagel@edu.unisinos.br<br>walbergabriel@edu.unisinos.br</p>
   </footer>
 
 </body>
