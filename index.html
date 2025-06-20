@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nosso Portfólio</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="js/scripts.js" defer></script>
 </head>
 
@@ -16,24 +17,30 @@
     <p>Desenvolvimento para Web 2025/1</p>
   </header>
 
+  <main>
   <!-- Configuração da sessão "quem somos nós?" -->
   <section>
     <h2>Quem somos nós?</h2>
     <div class="cards">
-      <div class="card" onclick="openModal('Clara Burghardt', 'Aluna do 5º Semestre de Ciência da Computação na Unisinos!', 'img/Clara.jpg')">
+      <div class="card" onclick="openModal('Clara Burghardt', 
+       `<p><i class='fas fa-user'></i> Aluna do 5º semestre de Ciências da Computação.</p>
+        <p><i class='fab fa-linkedin'></i> <a href='https://www.linkedin.com/in/claraburghardt/' target='_blank'>LinkedIn</a></p>
+        <p><i class='fab fa-github'></i> <a href='https://github.com/claraburghardt' target='_blank'>GitHub</a></p>`,
+        'img/Clara.jpg')">
         <img src="img/Clara.jpg" alt="Clara Burghardt">
         <h3>Clara Burghardt</h3>
-        <a href="https://www.linkedin.com/in/claraburghardt/">LinkedIn</a>
       </div>
-      <div class="card" onclick="openModal('Patrícia Nagel', 'Aluna do 5º Semestre de Ciência da Computação na Unisinos!', 'img/Patricia.jpg')">
+      <div class="card" onclick="openModal('Patricia Nagel', 
+       `<p><i class='fas fa-user'></i> Aluna do 5º semestre de Ciências da Computação.</p>
+        <p><i class='fab fa-linkedin'></i> <a href='https://www.linkedin.com/in/patricia-nagel/' target='_blank'>LinkedIn</a></p>
+        <p><i class='fab fa-github'></i> <a href='https://github.com/patricia-nagel' target='_blank'>GitHub</a></p>`,
+        'img/Patricia.jpg')">
         <img src="img/Patricia.jpg" alt="Patricia Nagel">
         <h3>Patrícia Nagel</h3>
-        <a href="https://www.linkedin.com/in/patricia-nagel/">LinkedIn</a>
       </div>
-      <div class="card" onclick="openModal('Gabriel Walber', 'Aluno do 5º Semestre de Ciência da Computação na Unisinos!', 'img/Gabriel.jpg')">
+      <div class="card" onclick="openModal('Gabriel Walber', 'Aluno do 5º Semestre de Ciências da Computação.', 'img/Gabriel.jpg')">
         <img src="img/Gabriel.jpg" alt="Gabriel Walber">
         <h3>Gabriel Walber</h3>
-        <a href="https://www.linkedin.com/in/gabriel-walber/">LinkedIn</a>
       </div>
     </div>
   </section>
@@ -42,19 +49,31 @@
   <section>
     <h2>Projetos Guiados</h2>
     <div class="cards">
-      <div class="card" onclick="openModal('Projeto Guiado #1', 'Projeto de desenvolvimento da tela de um artigo sobre a banda The Acacia Strain, estudando e aplicando conceitos de CSS.', 'img/ProjetoGuiado1.png')">
+      <div class="card" onclick="openModal('Projeto Guiado #1', 
+        `<p><i class='fas fa-align-left'></i> <strong>Descrição:</strong> Projeto de desenvolvimento da tela de um artigo sobre a banda The Acacia Strain.</p>
+        <p><i class='fas fa-lightbulb'></i> <strong>Conceitos aplicados:</strong> CSS.</p>`,
+        'img/ProjetoGuiado1.png')">
         <img src="img/ProjetoGuiado1.png" alt="Projeto Guiado #1">
         <h3>Projeto Guiado #1</h3>
       </div>
-      <div class="card" onclick="openModal('Projeto Guiado #3', 'Projeto de desenvolvimento da tela de uma réplica da página inicial do Instagram, estudando e aplicando responsividade.', 'img/ProjetoGuiado3.png')">
+      <div class="card" onclick="openModal('Projeto Guiado #3', 
+        `<p><i class='fas fa-align-left'></i> <strong>Descrição:</strong> Tela de réplica da página inicial do Instagram.</p>
+        <p><i class='fas fa-lightbulb'></i> <strong>Conceitos aplicados:</strong> Responsividade com CSS.</p>`,      
+        'img/ProjetoGuiado3.png')">
         <img src="img/ProjetoGuiado3.png" alt="Projeto Guiado #3">
         <h3>Projeto Guiado #3</h3>
       </div>
-      <div class="card" onclick="openModal('Projeto Guiado #4', 'Projeto de desenvolvimento da tela de um Gerador de Tabuada, estudando e aplicando conceitos de JavaScript.', 'img/ProjetoGuiado4.png')">
+      <div class="card" onclick="openModal('Projeto Guiado #4', 
+        `<p><i class='fas fa-align-left'></i> <strong>Descrição:</strong> Projeto de um Gerador de Tabuada.</p>
+        <p><i class='fas fa-lightbulb'></i> <strong>Conceitos aplicados:</strong> JavaScript.</p>`, 
+        'img/ProjetoGuiado4.png')">
         <img src="img/ProjetoGuiado4.png" alt="Projeto Guiado #4">
         <h3>Projeto Guiado #4</h3>
       </div>
-      <div class="card" onclick="openModal('Projeto Guiado #5', 'Projeto de desenvolvimento da tela de um Gerador de QRCode a partir de uma URL, estudando e aplicando uso de APIs.', 'img/ProjetoGuiado5.png')">
+      <div class="card" onclick="openModal('Projeto Guiado #5', 
+        `<p><i class='fas fa-align-left'></i> <strong>Descrição:</strong> Tela de um Gerador de QRCode a partir de uma URL.</p>
+        <p><i class='fas fa-lightbulb'></i> <strong>Conceitos aplicados:</strong> Consumo de APIs com JavaScript.</p>`,
+        'img/ProjetoGuiado5.png')">
         <img src="img/ProjetoGuiado5.png" alt="Projeto Guiado #5">
         <h3>Projeto Guiado #5</h3>
       </div>
@@ -70,6 +89,7 @@
       <p id="modal-description" style="margin-top: 1rem;"></p>
     </div>
   </div>
+  </main>
 
   <!-- Configuração do rodapé da página -->
   <footer>

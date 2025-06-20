@@ -1,7 +1,7 @@
 // Função que abre o modal e preenche título, descrição e imagem
 function openModal(title, description, imageUrl) {
     document.getElementById('modal-title').innerText = title;
-    document.getElementById('modal-description').innerText = description;
+    document.getElementById('modal-description').innerHTML = description;
     document.getElementById('modal-img').src = imageUrl;
     document.getElementById('modal').style.display = 'block';
 }
