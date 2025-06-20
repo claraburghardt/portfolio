@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso Portfólio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Nosso Portfólio</h1>
+    <p>Desenvolvimento para Web 2025/1</p>
+  </header>
+
+  <section>
+    <h2>Quem somos nós?</h2>
+    <div class="cards">
+      <div class="card" onclick="openModal('Clara Burghardt', 'Aluna do 5o Semestre de Ciência da Computação na Unisinos!', 'img/Clara.jpg')">
+        <img src="img/Clara.jpg" alt="Clara Burghardt">
+        <h3>Clara Burghardt</h3>
+        <a href="https://www.linkedin.com/in/claraburghardt/">LinkedIn</a>
+      </div>
+      <div class="card" onclick="openModal('Patrícia Nagel', 'Aluna do 5o Semestre de Ciência da Computação na Unisinos!', 'img/Patricia.jpg')">
+        <img src="img/Patricia.jpg" alt="Patricia Nagel">
+        <h3>Patrícia Nagel</h3>
+        <a href="https://www.linkedin.com/in/patricia-nagel/">LinkedIn</a>
+      </div>
+      <div class="card" onclick="openModal('Outro Menino', 'Descrição do outro menino', 'img/Clara.jpg')">
+        <img src="img/Clara.jpg" alt="Outro Menino">
+        <h3>Outro Menino</h3>
+        <a href="https://www.linkedin.com/in/claraburghardt/">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projetos Guiados</h2>
+    <div class="cards">
+      <div class="card" onclick="openModal('Projeto Guiado #1', 'Descrição do projeto', 'img/ProjetoGuiado1.png')">
+        <img src="img/ProjetoGuiado1.png" alt="Projeto Guiado #1">
+        <h3>Projeto Guiado #1</h3>
+      </div>
+      <div class="card" onclick="openModal('Projeto Guiado #3', 'Descrição do projeto', 'img/ProjetoGuiado3.png')">
+        <img src="img/ProjetoGuiado3.png" alt="Projeto Guiado #3">
+        <h3>Projeto Guiado #3</h3>
+      </div>
+      <div class="card" onclick="openModal('Projeto Guiado #4', 'Descrição do projeto', 'img/ProjetoGuiado4.png')">
+        <img src="img/ProjetoGuiado4.png" alt="Projeto Guiado #4">
+        <h3>Projeto Guiado #4</h3>
+      </div>
+      <div class="card" onclick="openModal('Projeto Guiado #5', 'Descrição do projeto', 'img/ProjetoGuiado5.png')">
+        <img src="img/ProjetoGuiado5.png" alt="Projeto Guiado #5">
+        <h3>Projeto Guiado #5</h3>
+      </div>
+    </div>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <img id="modal-img" src="" style="width: 100%; border-radius: 4px; margin-top: 1rem;" alt="">
+      <p id="modal-description" style="margin-top: 1rem;"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Contato</p>
+    <p>cburghardt@edu.unisinos.br<br>email 2<br>email 3</p>
+  </footer>
+
+</body>
+</html>
