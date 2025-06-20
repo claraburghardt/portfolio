@@ -114,6 +114,14 @@ h2 {
     max-width: 500px;
     border-radius: 8px;
     position: relative;
+    text-align: center;
+}
+
+/* Estiliza a imagem do modal */
+.modal-content img {
+    display: block;
+    max-width: 300px;
+    margin: 1rem auto 0 auto;
 }
 
 /* Estiliza o botão de fechar do modal */
