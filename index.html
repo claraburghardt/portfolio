@@ -13,6 +13,7 @@
 <body>
   <!-- Configuração do cabeçalho da página -->
   <header>
+    <button id="theme-toggle" class="theme-button">💡 Tema</button>
     <h1>Nosso Portfólio</h1>
     <p>Desenvolvimento para Web 2025/1</p>
   </header>
@@ -20,7 +21,7 @@
   <main>
   <!-- Configuração da sessão "quem somos nós?" -->
   <section>
-    <h2>Quem somos nós?</h2>
+    <h2 id="typing-about"></h2>
     <div class="cards">
       <div class="card" onclick="openModal('Clara Burghardt', 
        `<p><i class='fas fa-user'></i> Aluna do 5º semestre de Ciências da Computação.</p>
@@ -39,9 +40,9 @@
         <h3>Patrícia Nagel</h3>
       </div>
       <div class="card" onclick="openModal('Gabriel Walber', 
-       `<p><i class='fas fa-user'></i> Aluna do 5º semestre de Ciências da Computação.</p>
-        <p><i class='fab fa-linkedin'></i> <a href='https://www.linkedin.com/gabriel-walber/' target='_blank'>LinkedIn</a></p>
-        <p><i class='fab fa-github'></i> <a href='https://github.com/gabrielWalber' target='_blank'>GitHub</a></p>`, 
+       `<p><i class='fas fa-user'></i> Aluno do 5º semestre de Ciências da Computação.</p>
+        <p><i class='fab fa-linkedin'></i> <a href='https://www.linkedin.com/in/gabriel-walber/' target='_blank'>LinkedIn</a></p>
+        <p><i class='fab fa-github'></i> <a href='https://github.com/GabrielCWalber' target='_blank'>GitHub</a></p>`, 
         'img/Gabriel.jpg')">
         <img src="img/Gabriel.jpg" alt="Gabriel Walber">
         <h3>Gabriel Walber</h3>
@@ -51,7 +52,7 @@
 
   <!-- Configuração da sessão "projetos guiados" -->
   <section>
-    <h2>Projetos Guiados</h2>
+    <h2 id="typing-projects"></h2>
     <div class="cards">
       <div class="card" onclick="openModal('Projeto Guiado #1', 
         `<p><i class='fas fa-align-left'></i> <strong>Descrição:</strong> Projeto de desenvolvimento da tela de um artigo sobre a banda The Acacia Strain.</p>
